@@ -1,0 +1,27 @@
+.header {
+  width: calc(100% - $sidebar-width);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  background-color: #0d0d0d;
+  filter: drop-shadow(0px 5px 22px rgba(0, 0, 0, 0.25));
+
+  /* .header__iner */
+  &__iner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* .header__left */
+  &__left {
+  }
+
+  /* .header__rigth */
+  &__rigth {
+  }
+
+  /* .header__btn */
+  &__btn {
+  }
+}

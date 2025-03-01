@@ -1,3 +1,85 @@
+.page {
+	padding-left: $sidebar-width;
+	padding-top: toRem(100);
+}
+
+.sidebar {
+	width: $sidebar-width;
+	background: #202020;
+	box-shadow: 5px 0px 15px 0px rgba(5, 5, 5, 0.10);
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+
+	/* .sidebar__image */
+	&__image {
+		& img {
+			max-width: 100%;
+		}
+	}
+
+	/* .sidebar__top */
+	&__top {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 30px;
+		margin-top: -50px;
+	}
+
+	/* .sidebar__logo */
+	&__logo {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+
+		& img {
+			max-width: 100%;
+			border-radius: 50%;
+		}
+	}
+
+	/* .sidebar__title */
+	&__title {
+		text-align: center;
+		margin-top: 19px;
+	}
+
+	/* .sidebar__subtitle */
+	&__subtitle {
+		color: #DEDEDE;
+		text-align: center;
+		font-style: normal;
+		font-weight: 300;
+		line-height: normal;
+		margin-top: 5px;
+	}
+
+	&__icons {
+		margin-top: 20px;
+		display: flex;
+		gap: 15px;
+	}
+
+	&__slogan {
+		border-top: 2px solid #1C1C1C;
+		max-width: 270px;
+		margin: 0px auto;
+		padding-top: 30px;
+	}
+
+	&__buttons {
+		margin-top: 60px;
+		display: flex;
+		justify-content: center;
+		gap: 20px;
+	}
+}
+
+
+
 //====================================================================================================
 
 //====================================================================================================

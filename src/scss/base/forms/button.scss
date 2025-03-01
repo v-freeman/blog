@@ -3,12 +3,36 @@
 
 .button {
 	display: inline-flex;
-	padding: 0px 0px;
-	@media (any-hover: hover) {
-		&:hover {
+	padding: 13px 20px;
+	border-radius: 5px;
+	transition: all 0.7s;
+
+	&--blue {
+		border: 1px solid #2A5FE7;
+		background: #3137C9;
+		box-shadow: 0px 7px 17px -10px rgba(32, 84, 219, 0.35);
+
+		@media (any-hover: hover) {
+			&:hover {
+				background: #2A5FE7;
+			}
 		}
+
+
 	}
+
 	&--fw {
 		width: 100%;
+	}
+
+	&--red {
+		background: #ED3024;
+		box-shadow: 0px 7px 17px -10px rgba(242, 63, 63, 0.20);
+
+		@media (any-hover: hover) {
+			&:hover {
+				background: #CD251A;
+			}
+		}
 	}
 }
