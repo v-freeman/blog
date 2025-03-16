@@ -3,15 +3,25 @@
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 10;
-  background-color: #0d0d0d;
+  z-index: 1;
+  background-color: $dark;
   filter: drop-shadow(0px 5px 22px rgba(0, 0, 0, 0.25));
-  min-height: toRem(50);
+  min-height: toRem(51);
+
+  @media (max-width: 630px) {
+    width: 100%;
+    ;
+  }
 
   /* .header__iner */
   &__iner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $tablet) {
+      padding-left: 20px;
+    }
   }
 
   /* .header__left */
@@ -25,7 +35,7 @@
 
   /* .header__btn */
   &__btn {
-    color: #FFF;
+    color: #FFFfff;
     @include adaptiveValue("font-size", 16, 12, 0, 1920, 992);
     font-style: normal;
     font-weight: 400;
@@ -36,15 +46,21 @@
 
     @media (any-hover: hover) {
       &:hover {
-        background-color: #3137C9;
+        background-color: $bg-Menu;
         ;
       }
+    }
+
+    @media (max-width: $mobile) {
+      font-size: toRem(16);
     }
   }
 }
 
 .search {
-  background-color: #202020;
+  position: relative;
+  z-index: 3;
+  background-color: $bg-siteBar;
   max-width: toRem(350);
   width: 100%;
   height: 100%;

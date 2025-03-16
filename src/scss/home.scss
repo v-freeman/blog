@@ -1,17 +1,25 @@
 .page {
 	padding-left: $sidebar-width;
 	padding-top: toRem(100);
+
+	@media (max-width: 630px) {
+		padding-left: 0;
+	}
 }
 
 .sidebar {
 	width: $sidebar-width;
-	background: #202020;
+	background: $bg-siteBar;
 	box-shadow: 5px 0px 15px 0px rgba(5, 5, 5, 0.10);
 	height: 100vh;
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 10;
+	z-index: 1;
+
+	@media (max-width: 630px) {
+		position: relative;
+	}
 
 	/* .sidebar__image */
 	&__image {
@@ -64,7 +72,7 @@
 	}
 
 	&__slogan {
-		border-top: 2px solid #1C1C1C;
+		border-top: 2px solid $dark-hr;
 		max-width: 270px;
 		margin: 0px auto;
 		padding-top: 30px;
@@ -81,5 +89,38 @@
 
 
 //====================================================================================================
+.storis {
+	margin: 0 auto;
+	max-width: 650px;
+
+	/* .storis__items */
+	&__items {
+		display: flex;
+		gap: 20px;
+		position: relative;
+	}
+
+	/* .storis__item */
+	&__item {
+		border-radius: 5px;
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 52.08%, rgba(0, 0, 0, 0.41) 76.41%, rgba(0, 0, 0, 0.80) 100%);
+		box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.20);
+		height: 195px;
+		overflow: hidden;
+	}
+
+	/* .storis__img */
+	&__img {}
+
+	/* .storis__title */
+	&__title {
+		position: absolute;
+	}
+
+	/* .storis__date */
+	&__date {}
+}
+
+
 
 //====================================================================================================

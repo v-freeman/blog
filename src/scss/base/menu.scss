@@ -14,16 +14,18 @@
 			overflow: auto;
 			padding: toRem(50) toRem(15) toRem(315) toRem(15);
 			transition: left 0.3s;
+			background-color: $bg;
 
 			&::before {
 				content: "";
 				position: fixed;
 				width: 100%;
-				height: toRem(70);
+				height: toRem(50);
 				left: -100%;
 				top: 0;
 				transition: left 0.3s;
 				z-index: 2;
+				background-color: $dark;
 			}
 
 			.menu-open & {
@@ -51,7 +53,7 @@
 
 	// .menu__link
 	&__link {
-		color: #FFF;
+		color: $white;
 		@include adaptiveValue("font-size", 16, 12, 0, 1920, 992);
 		font-style: normal;
 		font-weight: 400;
@@ -62,12 +64,14 @@
 
 		@media (any-hover: hover) {
 			&:hover {
-				background-color: #3137C9;
+				background-color: $bg-Menu;
 				;
 			}
 		}
 
-		@media (max-width: $mobile) {}
+		@media (max-width: $mobile) {
+			font-size: toRem(16);
+		}
 	}
 }
 
@@ -95,7 +99,7 @@
 			position: absolute;
 			width: 100%;
 			height: toRem(2);
-			background-color: #fff;
+			background-color: $white;
 		}
 
 		&::before {
