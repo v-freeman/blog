@@ -1,21 +1,204 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
-@@include('html/_head.htm',{
-"title":"HomePage"
-})
-<link rel="stylesheet" href="scss/home.scss">
-
-<body>
-	<div class="wrapper">
-		@@include('html/_header.htm',{})
-		@@include('html/_sidebar.htm',{})
-		<!-- /.sidebar -->
-		<main class="page">
-			@@include('html/_storis.htm',{})
-		</main>
-		@@include('html/_footer.htm',{})
-	</div>
-	@@include('html/_js.htm',{})
-</body>
-
+  @@include('html/_head.htm',{ "title":"HomePage" })
+  <link rel="stylesheet" href="scss/home.scss" />
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{}) @@include('html/_sidebar.htm',{})
+      <!-- /.sidebar -->
+      <main class="page">
+        @@include('html/_storis.htm',{})
+        <section class="posts">
+          <div class="posts_container">
+            <div class="post">
+              <div class="post__iner">
+                <p class="post__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Elementum volutpat orci turpis urna. Et vestibulum, posuere
+                  tortor lacinia sit. Sagittis porttitor orci auctor in at
+                  tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor
+                  nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel
+                  volutpat.
+                </p>
+                <div class="post__bottom">
+                  <div class="post__date">21.06.2020</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="posts">
+          <div class="posts_container">
+            <div class="post">
+              <div class="post__img">
+                <img
+                  src="@img/post/post1.jpeg"
+                  alt="Lorem ipsum dolor sit amet,"
+                />
+              </div>
+              <div class="post__iner">
+                <h3 class="post__title">
+                  Как писать код быстро и безболезненно?
+                </h3>
+                <p class="post__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Elementum volutpat orci turpis urna. Et vestibulum, posuere
+                  tortor lacinia sit. Sagittis porttitor orci auctor in at
+                  tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor
+                  nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel
+                  volutpat.
+                </p>
+                <div class="post__bottom">
+                  <div class="post__left">
+                    <div class="post__date">21.06.2020</div>
+                    <div class="post__category">
+                      <a href="#">создание сайтов</a> ,
+                      <a href="#">создание сайтов</a>
+                    </div>
+                  </div>
+                  <div class="post__right">
+                    <a href="#" class="post__link">Читати далі</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="posts">
+          <div class="posts_container">
+            <div class="post">
+              <div class="post__img">
+                <img
+                  src="@img/post/post1.jpeg"
+                  alt="Lorem ipsum dolor sit amet,"
+                />
+              </div>
+              <div class="post__iner">
+                <h3 class="post__title">
+                  Как писать код быстро и безболезненно?
+                </h3>
+                <p class="post__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Elementum volutpat orci turpis urna. Et vestibulum, posuere
+                  tortor lacinia sit. Sagittis porttitor orci auctor in at
+                  tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor
+                  nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel
+                  volutpat.
+                </p>
+                <div class="post__bottom">
+                  <div class="post__left">
+                    <div class="post__date">21.06.2020</div>
+                    <div class="post__category">
+                      <a href="#">создание сайтов</a> ,
+                      <a href="#">создание сайтов</a>
+                    </div>
+                  </div>
+                  <div class="post__right">
+                    <a href="#" class="post__link">Читати далі</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="posts">
+          <div class="posts_container">
+            <div class="post">
+              <div class="post__img">
+                <img
+                  src="@img/post/post1.jpeg"
+                  alt="Lorem ipsum dolor sit amet,"
+                />
+              </div>
+              <div class="post__iner">
+                <h3 class="post__title">
+                  Как писать код быстро и безболезненно?
+                </h3>
+                <p class="post__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Elementum volutpat orci turpis urna. Et vestibulum, posuere
+                  tortor lacinia sit. Sagittis porttitor orci auctor in at
+                  tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor
+                  nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel
+                  volutpat.
+                </p>
+                <div class="post__bottom">
+                  <div class="post__left">
+                    <div class="post__date">21.06.2020</div>
+                    <div class="post__category">
+                      <a href="#">создание сайтов</a> ,
+                      <a href="#">создание сайтов</a>
+                    </div>
+                  </div>
+                  <div class="post__right">
+                    <a href="#" class="post__link">Читати далі</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="posts">
+          <div class="posts_container">
+            <div class="post">
+              <div class="post__img">
+                <img
+                  src="@img/post/post1.jpeg"
+                  alt="Lorem ipsum dolor sit amet,"
+                />
+              </div>
+              <div class="post__iner">
+                <h3 class="post__title">
+                  Как писать код быстро и безболезненно?
+                </h3>
+                <p class="post__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Elementum volutpat orci turpis urna. Et vestibulum, posuere
+                  tortor lacinia sit. Sagittis porttitor orci auctor in at
+                  tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor
+                  nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel
+                  volutpat.
+                </p>
+                <div class="post__bottom">
+                  <div class="post__left">
+                    <div class="post__date">21.06.2020</div>
+                    <div class="post__category">
+                      <a href="#">создание сайтов</a> ,
+                      <a href="#">создание сайтов</a>
+                    </div>
+                  </div>
+                  <div class="post__right">
+                    <a href="#" class="post__link">Читати далі</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="pagenav">
+          <div class="pagenav_container">
+            <ul class="pagenav__list">
+              <li class="pagenav__item">
+                <a href="" class="pagenav__link">&laquo;</a>
+              </li>
+              <li class="pagenav__item">
+                <a href="" class="pagenav__link">1</a>
+              </li>
+              <li class="pagenav__item">
+                <a href="" class="pagenav__link pagenav__item--active">2</a>
+              </li>
+              <li class="pagenav__item">
+                <a href="" class="pagenav__link">3</a>
+              </li>
+              <li class="pagenav__item">
+                <a href="" class="pagenav__link">&raquo;</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_js.htm',{})
+  </body>
 </html>
